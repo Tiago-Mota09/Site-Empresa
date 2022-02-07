@@ -1,0 +1,103 @@
+.footer {
+	padding-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@include mq-mobile {
+		padding-top: 20px;
+	}
+
+	@include mq-tablet {
+		padding-top: 30px;
+	}
+
+	&__logotipo {
+		height: 51px;
+		width: 110px;
+
+		@include mq-tablet {
+			margin: 40px;
+		}
+
+		@include mq-mobile {
+			margin: 30px;
+		}
+	}
+
+	&__logos {
+		padding: 50px 0 78px;
+		border-bottom: 1px solid $color_title;
+		display: flex;
+		align-items: center;
+		width: 80%;
+
+		@include mq-tablet {
+			flex-direction: column;
+			width: 80%;
+		}
+
+		@include mq-mobile {
+			flex-direction: column;
+			width: 80%;
+		}
+
+		.icon {
+			width: 30px;
+			height: 30px;
+			margin: 0 20px;
+
+			@include mq-mobile {
+				width: 20px;
+				height: 20px;
+				margin: 0 10px;
+			}
+
+			@include mq-tablet {
+				width: 32px;
+				height: 30px;
+			}
+
+			@include mq-desktop {
+				width: 32px;
+				height: 30px;
+			}
+		}
+		&__span {
+			display: inline-block;
+			align-items: center;
+		}
+
+		@include mq-tablet {
+			align-items: center;
+		}
+
+		@include mq-mobile {
+			align-items: center;
+		}
+
+		&__sociais {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 30px;
+
+			@include mq-tablet {
+				margin-top: 40px;
+			}
+
+			@include mq-mobile {
+				width: 90%;
+				justify-content: space-around;
+			}
+		}
+	}
+
+	&__copyrigth {
+		text-align: center;
+		align-items: center;
+		margin: 32px;
+	}
+}

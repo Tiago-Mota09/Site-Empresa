@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+
+.container {
+	@extend %container;
+}
+
+.content {
+	@extend %content;
+}
+
+.fontzero {
+	@extend %fontzero;
+}
+
+.flex {
+	@extend %flex;
+}
+
+.flex-between {
+	@extend %flex-between;
+}

@@ -1,0 +1,220 @@
+.why-use {
+	background-color: $color_primary;
+	color: $color_white;
+	height: 369px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include mq-tablet {
+
+		height: auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	@include mq-mobile {
+		height: auto;
+		width: 100%;
+		display: flex;
+	}
+
+	.why-aux {
+		@include mq-tablet {
+			flex-direction: column;
+			display: flex;
+		}
+	}
+
+	.why {
+		height: 230px;
+		width: 100%;
+		padding-right: 40px;
+		border-right: 1px solid $color_white;
+
+		@include mq-desktop {
+			padding-right: 30px;
+			width: 30%;
+		}
+
+		@include mq-tablet {
+			height: auto;
+			width: 70%;
+			border-right: none;
+			padding: 40px 0x 0px 0px;
+			margin: 0 auto 80px;
+			border-bottom: 1px solid $color_white;
+		}
+
+		@include mq-mobile {
+			height: auto;
+			width: 80%;
+			border-right: none;
+			padding: 50px auto 0px;
+		}
+
+		&__subtitulo {
+			font-size: 28px;
+			line-height: 38px;
+			font-weight: 600;
+
+			@include mq-desktop {
+				font-size: 20px;
+				line-height: 30px;
+				
+			}
+
+			@include mq-tablet {
+				font-size: 45px;
+				line-height: 55px;
+				width: 70%;
+				margin: 80px auto 20px;
+			}
+
+			@include mq-mobile {
+				font-size: 35px;
+				line-height: 45px;
+				font-size: 36px;
+				line-height: 46px;
+				width: 90%;
+				padding-left: 50px;
+			}
+		}
+
+		&__descricao {
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 400;
+			color: $color_white;
+			padding: 25px 0 50px;
+			width: 100%;
+
+
+			@include mq-large-screen {
+				font-size: 15px;
+				line-height: 25px;
+				align-items: center;
+				width: 100%;
+			}
+
+			@include mq-desktop {
+				font-size: 13px;
+				
+			}
+
+			@include mq-tablet {
+				width: 100%;
+				font-size: 22px;
+				line-height: 32px;
+				align-items: center;
+				margin: 0 auto;
+			}
+
+			@include mq-mobile {
+				width: 90%;
+				font-size: 22px;
+				line-height: 32px;
+				margin: 0 auto;
+			}
+		}
+
+	}
+
+	.tecnologia {
+		height: 208px;
+		width: 80%;
+		padding-left: 24px;
+
+		@include mq-desktop {
+			padding-left: 20px;
+			width: 20%;
+		}
+
+		@include mq-tablet {
+			height: auto;
+			width: 90%;
+			margin: 0px auto 100px;
+			padding: 0;
+		}
+
+		@include mq-mobile {
+			height: auto;
+			width: 90%;
+			padding: 20px 0 0;
+			margin: 0 auto 50px;
+		}
+
+		&__icons {
+			height: 60px;
+			width: 61px;
+
+			@include mq-large-screen {
+				width: 50px;
+				height: 50px;
+			}
+
+			@include mq-desktop {
+				width: 50px;
+				height: 50px;
+			}
+
+			@include mq-tablet {
+				width: 80px;
+				height: 80px;
+			}
+
+			@include mq-mobile {
+				width: 80px;
+				height: 80px;
+			}
+		}
+
+		&__subtitulo {
+
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 600;
+			margin: 20px 0 20px 0;
+
+			@include mq-large-screen {
+				font-size: 15px;
+				line-height: 15px;
+			}
+
+			@include mq-desktop {
+				font-size: 15px;
+				line-height: 15px;
+			}
+
+			@include mq-tablet {
+				font-size: 25px;
+				line-height: 35px;
+			}
+
+			@include mq-mobile {
+				font-size: 20px;
+				line-height: 30px;
+			}
+
+		}
+
+		&__descricao {
+			@include mq-desktop {
+				font-size: 12px;
+			}
+
+			@include mq-tablet {
+				margin: 0 auto;
+				width: 60%;
+				font-size: 22px;
+				line-height: 32px;
+			}
+
+			@include mq-mobile {
+				font-size: 21px;
+				line-height: 31px;
+			}
+		}
+	}
+}

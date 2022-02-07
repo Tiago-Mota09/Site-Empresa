@@ -1,0 +1,328 @@
+.funcionalidades {
+	justify-content: center;
+	display: flex;
+	&__titulo {
+		margin-top: 140px;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 42px;
+		color: $color_title;
+		@include mq-tablet {
+			width: 100%;
+			height: auto;
+			font-size: 40px;
+			line-height: 50px;
+			text-align: center;
+		}
+		@include mq-mobile {
+			width: 80%;
+			font-size: 35px;
+			line-height: 45px;
+			margin: 40px auto;
+		}
+	}
+
+	.nav {
+		@include mq-tablet {
+			display: flex;
+			justify-content: space-around;
+			overflow-x: auto;
+		}
+
+		.lista {
+			display: flex;
+			justify-content: flex-start;
+			list-style: none;
+			width: 100%;
+
+			.item {
+				padding-top: 48px;
+
+				.link {
+					text-decoration: none;
+					margin-right: 52px;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 24px;
+					color: $color_text;
+					@include mq-tablet {
+						margin-right: 32px;
+						display: flex;
+					}
+					@include mq-mobile {
+						padding: 0 24px;
+						display: flex;
+						width: 100%;
+					}
+
+					.icons {
+						width: 15px;
+						height: 16.67px;
+						margin-right: 12px;
+						@include mq-tablet {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.funcionalidade {
+		@include mq-tablet {
+			flex-direction: column;
+		}
+		.sections {
+			padding-top: 100px;
+			width: 441px;
+			height: 661px;
+			margin-bottom: 80px;
+			@include mq-desktop {
+				width: 40%;
+				height: auto;
+			}
+			@include mq-tablet {
+				justify-content: center;
+				text-align: center;
+				width: 100%;
+				padding-top: 50px;
+			}
+			@include mq-mobile {
+				text-align: center;
+				height: auto;
+				margin-bottom: 30px;
+			}
+
+			&__titulo {
+				font-size: 42px;
+				line-height: 63px;
+				margin: 32px auto 15px;
+				color: $color_title;
+
+				@include mq-desktop {
+					font-size: 32px;
+					line-height: 42px;
+					margin: 32px 0 15px 0;
+					color: $color_title;
+				}
+			}
+
+			&__subtitulo {
+				width: 368px;
+				height: 54px;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 27px;
+				color: $color_text;
+
+				@include mq-desktop {
+					height: 50px;
+					font-weight: 600;
+					font-size: 17px;
+					line-height: 28px;
+					color: $color_text;
+				}
+				@include mq-tablet {
+					width: 80%;
+					height: auto;
+					font-weight: 500;
+					font-size: 22px;
+					line-height: 32px;
+					margin: 37px auto 16px;
+				}
+			}
+
+			&__descricao {
+				width: 439px;
+				height: 168px;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 24px;
+				margin-top: 16px;
+				color: $color_text;
+				@include mq-desktop {
+					width: 100%;
+					height: auto;
+				}
+				@include mq-tablet {
+					width: 80%;
+					height: auto;
+					font-size: 18px;
+					line-height: 28px;
+					margin: 30px auto;
+				}
+				@include mq-mobile {
+					margin: 0 auto;
+				}
+			}
+
+			&__botao {
+				border: none;
+				width: 403px;
+				height: 47px;
+				left: 78px;
+				top: 564px;
+				color: $color_white;
+				background: $bg_secundary;
+				border-radius: 5px;
+				margin-top: 35px;
+				cursor: pointer;
+				outline: 0;
+				&:hover {
+					background: $color_secundary_hover;
+					transition: 1s;
+				}
+				@include mq-desktop {
+					width: 335px;
+					margin-bottom: 30px;
+				}
+
+				@include mq-mobile {
+					width: 90%;
+					height: auto;
+					margin-top: 32px auto 0 auto;
+					padding: 16px 0;
+					font-size: 14px;
+				}
+			}
+
+			&__icons {
+				width: 42px;
+				height: 41.31px;
+				@include mq-mobile {
+					width: 10%;
+					height: auto;
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+.ilustracao_gestao_capacidade {
+	width: 600px;
+	height: 530px;
+	padding-top: 139px;
+	@include mq-desktop {
+		width: 60%;
+		height: 100%;
+		margin-left: 160px;
+	}
+	@include mq-tablet {
+		width: 80%;
+		height: auto;
+		padding-top: 50px;
+	}
+	@include mq-mobile {
+		width: 80%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.ilustracao_emissao_cte {
+	width: 486px;
+	height: 402px;
+	margin-top: 125px;
+	@include mq-desktop {
+		width: 70%;
+		height: 70%;
+		margin-top: 125px;
+	}
+	@include mq-tablet {
+		width: 70%;
+		height: auto;
+		margin-top: 50px;
+	}
+	@include mq-mobile {
+		width: 80%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.ilustracao_analytics {
+	width: 650px;
+	height: 492.9px;
+	margin: 100px 35px 0 0;
+	@include mq-desktop {
+		width: 75%;
+		height: 120%;
+		margin: 0 0 0 100px;
+	}
+	@include mq-tablet {
+		width: 70%;
+		height: auto;
+		margin: 50px 0 0 0;
+	}
+	@include mq-mobile {
+		width: 80%;
+		height: auto;
+		margin: 0;
+	}
+}
+.ilustracao_tracking {
+	width: 507px;
+	height: 453.94px;
+	margin-top: 125px;
+	@include mq-desktop {
+		width: 70%;
+		height: 70%;
+		margin-top: 125px;
+	}
+	@include mq-tablet {
+		width: 60%;
+		height: auto;
+		margin: 50px 0 120px;
+	}
+	@include mq-mobile {
+		width: 70%;
+		height: auto;
+		margin: 0 0 50px 0;
+	}
+}
+
+.container_img {
+	@include mq-tablet {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		padding-top: 0;
+	}
+
+	@include mq-mobile {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 50px auto 100px;
+	}
+}
+
+.emissao-cte {
+	@include mq-tablet {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	@include mq-mobile {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.tracking {
+	@include mq-tablet {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	@include mq-mobile {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}

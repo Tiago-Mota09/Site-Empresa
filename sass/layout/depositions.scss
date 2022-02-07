@@ -1,0 +1,321 @@
+.despositions {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	@include mq-tablet {
+		flex-direction: column;
+		display: flex;
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	@include mq-mobile {
+		flex-direction: column;
+		display: flex;
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	&__titulo {
+		width: 594px;
+		height: auto;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 48px;
+		margin-top: 212px;
+		color: $color_title;
+		padding: 80px 0 50px;
+
+		@include mq-desktop {
+			width: 65%;
+			margin-top: 95px;
+		}
+
+		@include mq-tablet {
+			text-align: center;
+			padding: 19px;
+			font-size: 40px;
+			line-height: 50px;
+			width: 100%;
+			margin-bottom: 48px;
+		}
+
+		@include mq-mobile {
+			height: auto;
+			text-align: center;
+			font-size: 30px;
+			line-height: 50px;
+			width: 100%;
+			margin: 140px 0 0;
+		}
+	}
+
+	&__members {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 72px;
+
+		@include mq-desktop {
+			margin-bottom: 25px;
+			margin-top: 55px;
+			width: 100%;
+		}
+
+		@include mq-tablet {
+			overflow-x: auto;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: auto;
+		}
+
+		@include mq-mobile {
+			align-items: center;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: flex-end;
+		margin: 30px 0;
+
+		// &:hover {
+		// 	background: $color_primary_hover;
+		// 	transition: 1s;
+		// }
+
+		@include mq-tablet {
+			justify-content: center;
+		}
+
+		@include mq-mobile {
+			justify-content: center;
+			width: 100%;
+			height: auto;
+		}
+
+		&__advance {
+			width: 64px;
+			height: 64px;
+			margin-left: 20px;
+			background: $color_primary;
+			border: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			outline: 0;
+
+			&:hover {
+				background: $color_primary_hover;
+				transition: 1s;
+			}
+
+			@include mq-large-screen {
+				margin: 0 15px 60px;
+			}
+
+			@include mq-desktop {
+				width: 50px;
+				height: 50px;
+				margin: 0 15px 60px;
+			}
+
+			@include mq-tablet {
+				width: 100px;
+				height: 100px;
+				margin-bottom: 0;
+			}
+
+			@include mq-mobile {
+				width: 60px;
+				height: 60px;
+				margin-bottom: 0;
+			}
+
+			&__arrows {
+				width: 30px;
+				height: 30px;
+
+				@include mq-tablet {
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+
+		&__back {
+
+			width: 64px;
+			height: 64px;
+			margin-left: 20px;
+			background: $color_primary;
+			border: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			outline: 0;
+
+			&:hover {
+				background: $color_primary_hover;
+				transition: 1s;
+			}
+
+			@include mq-large-screen {
+				margin: 0 15px 60px;
+			}
+
+			@include mq-desktop {
+				width: 50px;
+				height: 50px;
+				margin: 0 15px 60px;
+			}
+
+			@include mq-tablet {
+				width: 100px;
+				height: 100px;
+				margin-bottom: 0;
+			}
+
+			@include mq-mobile {
+				width: 60px;
+				height: 60px;
+				margin-bottom: 0;
+			}
+
+			&__arrows {
+				width: 30px;
+				height: 30px;
+
+				@include mq-tablet {
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+
+
+	.card {
+		position: relative;
+		width: 305px;
+		height: 362px;
+		padding: 90px 20px;
+		box-shadow: 0px 1px 10px rgba(162, 162, 162, 0.25);
+
+		@include mq-large-screen {
+			height: 360px;
+			margin: 50px 20px 20px 0;
+			width: 100%;
+		}
+
+		@include mq-desktop {
+			height: 400px;
+			margin: 40px 10px 5px 10px;
+			width: 100%;
+		}
+
+		@include mq-tablet {
+			height: 500px;
+			width: 540px;
+			padding: 80px 30px;
+			min-width: 430px;
+			margin: 100px 50px 30px 50px;
+		}
+
+		@include mq-mobile {
+			height: 360px;
+			margin: 50px 0px 20px 20px;
+			width: 100%;
+			padding: 30px 0;
+			min-width: 400px;
+		}
+
+		&__img {
+			width: 60px;
+			position: absolute;
+			top: -32px;
+			left: 20px;
+			height: 60px;
+
+			@include mq-tablet {
+				width: 100px;
+				height: 100px;
+				top: -50px;
+				left: 40px;
+			}
+
+			@include mq-mobile {
+				width: 80px;
+				height: 80px;
+				top: -50px;
+				left: 40px;
+			}
+		}
+
+		&__subtitulo {
+			color: $color_primary;
+			margin-top: 32px;
+
+			@include mq-desktop {
+				margin-top: 15px;
+			}
+
+			@include mq-tablet {
+				font-size: 22px;
+				line-height: 32px;
+				margin-left: 25px;
+			}
+
+			@include mq-mobile {
+				font-size: 22px;
+				line-height: 32px;
+				margin: 10px 25px 10px;
+			}
+		}
+
+		&__descricao {
+			@include mq-large-screen {
+				margin: -3px;
+			}
+
+			@include mq-desktop {
+				font-size: 15px;
+				line-height: 20px;
+			}
+
+			@include mq-tablet {
+				font-size: 22px;
+				line-height: 32px;
+				margin: 40px 25px 40px 25px;
+			}
+
+			@include mq-mobile {
+				font-size: 22px;
+				line-height: 32px;
+				margin: 10px 25px 0px 25px;
+			}
+		}
+
+		.span {
+			color: $color_text;
+
+			@include mq-tablet{
+				font-size: 22px;
+				line-height: 32px;
+				margin-left: 25px;
+			}
+			@include mq-mobile {
+				font-size: 22px;
+				line-height: 32px;
+				margin: 0 0 0 25px;
+			}
+		}
+	}
+}

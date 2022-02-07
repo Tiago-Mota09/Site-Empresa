@@ -1,0 +1,109 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 80px;
+
+	&__inicio {
+		@include mq_tablet {
+			flex-direction: column;
+		}
+	}
+	&__img {
+		width: 519px;
+		height: 481.51px;
+		margin-bottom: -12px;
+
+		@include mq-desktop {
+			width: 100%;
+			height: 100%;
+		}
+
+		@include mq-tablet {
+			width: 100%;
+			height: 100%;
+			padding-top: 50px;
+		}
+	}
+
+	&__text {
+		height: 216px;
+		width: 679px;
+		left: 78px;
+		top: 28px;
+
+		@include mq-desktop {
+			height: auto;
+			width: 45%;
+		}
+
+		@include mq-tablet {
+			height: auto;
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	&__titulo {
+		font-size: 48px;
+		line-height: 58px;
+		font-weight: 700;
+		text-align: left;
+		margin-bottom: 30px;
+		color: $color_title;
+
+		@include mq-desktop {
+			font-size: 35px;
+			line-height: 45px;
+			margin-bottom: 7px;
+		}
+
+		@include mq-tablet {
+			font-size: 42px;
+			line-height: 52px;
+			text-align: center;
+			color: $color_title;
+		}
+	}
+
+	&__descricao {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 400;
+		height: auto;
+		margin: 32px 0;
+		color: $color_text;
+
+		@include mq-large-screen {
+			width: 90%;
+			margin-bottom: 50px;
+		}
+
+		@include mq-desktop {
+			width: 90%;
+			margin-bottom: 20px;
+		}
+
+		@include mq-tablet {
+			color: $color_text;
+			padding: 16px 0 32px 0;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color_white;
+		background: $bg_secundary;
+		border-radius: 5px;
+		padding: 12px 30px;
+		margin-top: 50px;
+		cursor: pointer;
+		outline: 0;
+
+		&:hover {
+			background: $color_secundary_hover;
+			transition: 1s;
+		}
+	}
+}

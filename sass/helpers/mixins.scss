@@ -1,0 +1,46 @@
+//Placeholders
+%container {
+	width: 100%;
+}
+
+%fontzero {
+	font-size: 0em;
+}
+
+%content {
+	width: 90%;
+	margin: 0 5%;
+	max-width: 1440px;
+}
+
+%flex {
+	display: flex;
+}
+
+%flex-between {
+	justify-content: space-between;
+}
+
+@mixin mq-mobile {
+	@media (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin mq-tablet {
+	@media (max-width: 959px) {
+		@content;
+	}
+}
+
+@mixin mq-desktop {
+	@media (min-width: 960px) and (max-width: 1440px) {
+		@content;
+	}
+}
+
+@mixin mq-large-screen {
+	@media (min-width: 1441px) {
+		@content;
+	}
+}
